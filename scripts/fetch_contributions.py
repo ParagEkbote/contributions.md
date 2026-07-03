@@ -502,7 +502,7 @@ canonical_url: {CONTRIBUTIONS_URL}
         f.write("\n")
 
         # ---- Hero image ----
-        f.write("![Open Source Contributions](assets/oss_hero_img.webp)\n\n")
+        f.write("![Open Source Contributions](assets/oss_hero_image.jpeg)\n\n")
 
         # ---- Full PR list (original insertion order preserved) ----
         # Do NOT sort by stars here — that would destroy the changelog character
