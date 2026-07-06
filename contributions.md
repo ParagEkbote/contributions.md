@@ -26,7 +26,9 @@ If other copies of this document exist, this version should be considered author
 
 **Unique repositories:** 29
 
-**Combined repository stars:** 482,607 ⭐
+**Combined repository stars:** 482,608 ⭐
+
+<img src="assets/oss_hero_image.webp" alt="Open Source Contributions" style="display:block; width:120%; height:auto; margin:1.5rem auto;" />
 
 ## 🚀 Recent Highlights
 
@@ -40,8 +42,6 @@ If other copies of this document exist, this version should be considered author
 - [fix: remove pruna-pro hook from pre-commit](https://github.com/PrunaAI/pruna/pull/572) — `PrunaAI/pruna` _2026-04-05_
 - [fix: cache handling in `SmashConfig` due to invalid path exception](https://github.com/PrunaAI/pruna/pull/598) — `PrunaAI/pruna` _2026-04-02_
 - [fix(torchao): update imports of quantizer](https://github.com/PrunaAI/pruna/pull/549) — `PrunaAI/pruna` _2026-03-24_
-
-<img src="assets/oss_hero_image.jpeg" alt="Open Source Contributions" style="display:block; width:200%; height:auto; margin:1.5rem auto;" />
 
 ## 🌐 Ecosystems Contributed To
 
@@ -228,8 +228,8 @@ If other copies of this document exist, this version should be considered author
 - `optuna/optunahub-registry`: 1 PRs
 
 ### 📦 Repository Activity (sorted by stars)
-- `huggingface/transformers` → ⭐ 162,303, forks 33,784, open issues 2,486
-- `pytorch/pytorch` → ⭐ 101,532, forks 28,270, open issues 18,239
+- `huggingface/transformers` → ⭐ 162,303, forks 33,784, open issues 2,485
+- `pytorch/pytorch` → ⭐ 101,532, forks 28,270, open issues 18,238
 - `hiyouga/LlamaFactory` → ⭐ 73,005, forks 8,924, open issues 1,066
 - `huggingface/diffusers` → ⭐ 33,992, forks 7,122, open issues 1,249
 - `huggingface/trl` → ⭐ 18,780, forks 2,827, open issues 408
@@ -238,11 +238,11 @@ If other copies of this document exist, this version should be considered author
 - `Lightning-AI/litgpt` → ⭐ 13,467, forks 1,468, open issues 265
 - `linkedin/Liger-Kernel` → ⭐ 6,484, forks 553, open issues 156
 - `skorch-dev/skorch` → ⭐ 6,170, forks 408, open issues 64
-- `zenml-io/zenml` → ⭐ 5,471, forks 632, open issues 128
+- `zenml-io/zenml` → ⭐ 5,471, forks 632, open issues 127
 - `mlabonne/llm-datasets` → ⭐ 4,683, forks 389, open issues 10
 - `huggingface/notebooks` → ⭐ 4,585, forks 1,823, open issues 225
 - `huggingface/blog` → ⭐ 3,454, forks 1,025, open issues 248
-- `argilla-io/distilabel` → ⭐ 3,313, forks 247, open issues 99
+- `argilla-io/distilabel` → ⭐ 3,314, forks 247, open issues 99
 - `alibaba/ROLL` → ⭐ 3,284, forks 294, open issues 118
 - `huggingface/cookbook` → ⭐ 2,691, forks 411, open issues 60
 - `huggingface/lighteval` → ⭐ 2,470, forks 503, open issues 341

@@ -457,6 +457,11 @@ canonical_url: {CONTRIBUTIONS_URL}
         f.write(f"**Unique repositories:** {len(repo_stats['repo_stats'])}\n\n")
         f.write(f"**Combined repository stars:** {repo_stats['total_stars']:,} ⭐\n\n")
 
+        # ---- Hero image ----
+        f.write(
+            "<img src=\"assets/oss_hero_image.webp\" alt=\"Open Source Contributions\" "
+            "style=\"display:block; width:120%; height:auto; margin:1.5rem auto;\" />\n\n"
+        )
         # ---- Recent Highlights ----
         # 10 most recently merged PRs, sorted by mergedAt descending.
         # PRs with no mergedAt (e.g. PyTorch REST fallback gaps) sort to the end.
@@ -474,12 +479,6 @@ canonical_url: {CONTRIBUTIONS_URL}
             date_tag  = f" _{merged_at}_" if merged_at else ""
             f.write(f"- [{pr['title']}]({pr['url']}) — `{repo}`{date_tag}\n")
         f.write("\n")
-
-        # ---- Hero image ----
-        f.write(
-            "<img src=\"assets/oss_hero_image.jpeg\" alt=\"Open Source Contributions\" "
-            "style=\"display:block; width:200%; height:auto; margin:1.5rem auto;\" />\n\n"
-        )
 
         # ---- Ecosystems Contributed To ----
         # Sorted by PR count (most_common). Lets a model quickly infer
