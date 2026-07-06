@@ -475,6 +475,12 @@ canonical_url: {CONTRIBUTIONS_URL}
             f.write(f"- [{pr['title']}]({pr['url']}) — `{repo}`{date_tag}\n")
         f.write("\n")
 
+        # ---- Hero image ----
+        f.write(
+            "<img src=\"assets/oss_hero_image.jpeg\" alt=\"Open Source Contributions\" "
+            "style=\"display:block; width:200%; height:auto; margin:1.5rem auto;\" />\n\n"
+        )
+
         # ---- Ecosystems Contributed To ----
         # Sorted by PR count (most_common). Lets a model quickly infer
         # which ecosystems have meaningful, repeated contributions.
@@ -500,9 +506,6 @@ canonical_url: {CONTRIBUTIONS_URL}
                 if impact_written >= 10:
                     break
         f.write("\n")
-
-        # ---- Hero image ----
-        f.write("![Open Source Contributions](assets/oss_hero_image.jpeg)\n\n")
 
         # ---- Full PR list (original insertion order preserved) ----
         # Do NOT sort by stars here — that would destroy the changelog character
