@@ -55,7 +55,7 @@ REST_URL    = "https://api.github.com"
 
 CONTRIBUTIONS_URL = (
     "https://raw.githubusercontent.com/"
-    "ParagEkbote/ParagEkbote.github.io/main/contributions.md"
+    "ParagEkbote/contributions.md/main/contributions.md"
 )
 
 # -------------------------------------------------------
