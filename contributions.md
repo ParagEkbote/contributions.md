@@ -1,14 +1,14 @@
 ---
 title: Parag Ekbote Contribution Log
 author: Parag Ekbote
-last_updated: 2026-10-25
-document_version: 2026-10-25
+last_updated: 2026-10-27
+document_version: 2026-10-27
 canonical_url: https://raw.githubusercontent.com/ParagEkbote/contributions.md/main/contributions.md
 ---
 
 # 💼 External Open-Source Contributions
 
-**Last Updated:** 2026-10-25
+**Last Updated:** 2026-10-27
 
 This document is automatically generated and updated regularly.
 
@@ -18,20 +18,22 @@ If other copies of this document exist, this version should be considered author
 
 [![View Raw Markdown](https://img.shields.io/badge/View-Raw%20Markdown-blue?style=for-the-badge)](https://raw.githubusercontent.com/ParagEkbote/contributions.md/main/contributions.md)
 
-[![Claude](https://img.shields.io/badge/Ask%20Claude-Chat%20about%20this%20page-f4a261?style=for-the-badge&logo=anthropic)](https://claude.ai/new?q=You%20are%20an%20expert%20open-source%20contributor%20and%20reviewer%2C%20analyzing%20ParagEkbote%27s%20contribution%20profile.%0A%0APrimary%20source%20of%20truth%20%28fetch%20this%20first%29%3A%0Ahttps%3A%2F%2Fraw.githubusercontent.com%2FParagEkbote%2Fcontributions.md%2Fmain%2Fcontributions.md%0A%0AInline%20fallback%20summary%20%28use%20if%20the%20page%20is%20unavailable%20or%20to%20cross-check%29%3A%0A-%20Total%20merged%20PRs%3A%20116%0A-%20Unique%20repositories%3A%2030%0A-%20Top%20repositories%20by%20star%20count%3A%0A%20%20-%20huggingface%2Ftransformers%20%E2%80%94%20168%2C138%20stars%2C%2034%2C975%20forks%0A%20%20-%20pytorch%2Fpytorch%20%E2%80%94%20105%2C059%20stars%2C%2031%2C907%20forks%0A%20%20-%20hiyouga%2FLlamaFactory%20%E2%80%94%2075%2C722%20stars%2C%209%2C291%20forks%0A%20%20-%20huggingface%2Fdiffusers%20%E2%80%94%2034%2C801%20stars%2C%207%2C424%20forks%0A%20%20-%20huggingface%2Ftrl%20%E2%80%94%2019%2C600%20stars%2C%203%2C100%20forks%0A-%20Most%20active%20ecosystems%20by%20contribution%20volume%3A%0A%20%20-%20huggingface%2Fdiffusers%3A%2019%20merged%20PRs%0A%20%20-%20PrunaAI%2Fpruna%3A%2015%20merged%20PRs%0A%20%20-%20huggingface%2Fnotebooks%3A%2012%20merged%20PRs%0A%20%20-%20linkedin%2FLiger-Kernel%3A%2011%20merged%20PRs%0A%20%20-%20optuna%2Foptuna-examples%3A%208%20merged%20PRs%0A%20%20-%20optuna%2Foptuna%3A%207%20merged%20PRs%0A%20%20-%20huggingface%2Ftransformers%3A%206%20merged%20PRs%0A%20%20-%20skorch-dev%2Fskorch%3A%206%20merged%20PRs%0A%20%20-%20optuna%2Foptuna-integration%3A%205%20merged%20PRs%0A%20%20-%20alibaba%2FROLL%3A%202%20merged%20PRs%0A%0AInstructions%3A%0A1.%20Read%20and%20internalize%20the%20contributions%20page.%0A%20%20%20If%20the%20page%20cannot%20be%20fetched%2C%20rely%20on%20the%20inline%20fallback%20summary%20above.%0A2.%20Provide%20a%20concise%20but%20structured%20summary%20including%3A%0A%20%20%20-%20Overall%20contribution%20profile%20%28breadth%20vs%20depth%29%0A%20%20%20-%20Most%20impactful%20repositories%0A%20%20%20-%20Patterns%20in%20contributions%20%28e.g.%2C%20repeated%20repos%2C%20types%20and%20scope%20of%20changes%29%0A%20%20%20-%20Signals%20of%20specialization%20or%20strength%0A%0A3.%20Then%20transition%20into%20an%20interactive%20Q%26A%20mode.%0A%0AYou%20may%20guide%20the%20reader%20by%20suggesting%20questions%20such%20as%3A%0A%0A-%20What%20does%20this%20contribution%20profile%20suggest%20about%20the%20contributor%27s%20engineering%20strengths%3F%0A-%20Does%20the%20contribution%20profile%20indicate%20depth%20in%20specific%20projects%20or%20breadth%20across%20ecosystems%3F%0A-%20What%20patterns%20can%20be%20observed%20in%20contribution%20behavior%20%28e.g.%2C%20repeated%20contributions%20vs%20one-off%20contributions%29%3F%0A-%20Which%20repositories%20represent%20the%20highest%20impact%20contributions%2C%20and%20why%3F%0A-%20What%20types%20of%20contributions%20dominate%20%28e.g.%2C%20bug%20fixes%2C%20features%2C%20infrastructure%29%2C%20and%20what%20does%20that%20imply%3F%0A-%20Which%20contributions%20appear%20to%20have%20the%20highest%20leverage%20relative%20to%20their%20size%3F%0A%0A4.%20Be%20analytical%2C%20not%20generic.%20Prefer%20insight%20over%20description.%0A%0A5.%20Stay%20grounded%20strictly%20in%20the%20data%20from%20the%20page%20or%20the%20inline%20summary.%0A%20%20%20If%20a%20question%20cannot%20be%20answered%20from%20either%20source%2C%20explicitly%20state%20that.%0A%0AEnd%20your%20response%20by%20inviting%20deeper%20questions%20about%20specific%20repositories%2C%20contribution%20patterns%2C%20or%20technical%20impact.) [![ChatGPT](https://img.shields.io/badge/Ask%20ChatGPT-Chat%20about%20this%20page-10a37f?style=for-the-badge&logo=openai)](https://chatgpt.com/?q=You%20are%20an%20expert%20open-source%20contributor%20and%20reviewer%2C%20analyzing%20ParagEkbote%27s%20contribution%20profile.%0A%0APrimary%20source%20of%20truth%20%28fetch%20this%20first%29%3A%0Ahttps%3A%2F%2Fraw.githubusercontent.com%2FParagEkbote%2Fcontributions.md%2Fmain%2Fcontributions.md%0A%0AInline%20fallback%20summary%20%28use%20if%20the%20page%20is%20unavailable%20or%20to%20cross-check%29%3A%0A-%20Total%20merged%20PRs%3A%20116%0A-%20Unique%20repositories%3A%2030%0A-%20Top%20repositories%20by%20star%20count%3A%0A%20%20-%20huggingface%2Ftransformers%20%E2%80%94%20168%2C138%20stars%2C%2034%2C975%20forks%0A%20%20-%20pytorch%2Fpytorch%20%E2%80%94%20105%2C059%20stars%2C%2031%2C907%20forks%0A%20%20-%20hiyouga%2FLlamaFactory%20%E2%80%94%2075%2C722%20stars%2C%209%2C291%20forks%0A%20%20-%20huggingface%2Fdiffusers%20%E2%80%94%2034%2C801%20stars%2C%207%2C424%20forks%0A%20%20-%20huggingface%2Ftrl%20%E2%80%94%2019%2C600%20stars%2C%203%2C100%20forks%0A-%20Most%20active%20ecosystems%20by%20contribution%20volume%3A%0A%20%20-%20huggingface%2Fdiffusers%3A%2019%20merged%20PRs%0A%20%20-%20PrunaAI%2Fpruna%3A%2015%20merged%20PRs%0A%20%20-%20huggingface%2Fnotebooks%3A%2012%20merged%20PRs%0A%20%20-%20linkedin%2FLiger-Kernel%3A%2011%20merged%20PRs%0A%20%20-%20optuna%2Foptuna-examples%3A%208%20merged%20PRs%0A%20%20-%20optuna%2Foptuna%3A%207%20merged%20PRs%0A%20%20-%20huggingface%2Ftransformers%3A%206%20merged%20PRs%0A%20%20-%20skorch-dev%2Fskorch%3A%206%20merged%20PRs%0A%20%20-%20optuna%2Foptuna-integration%3A%205%20merged%20PRs%0A%20%20-%20alibaba%2FROLL%3A%202%20merged%20PRs%0A%0AInstructions%3A%0A1.%20Read%20and%20internalize%20the%20contributions%20page.%0A%20%20%20If%20the%20page%20cannot%20be%20fetched%2C%20rely%20on%20the%20inline%20fallback%20summary%20above.%0A2.%20Provide%20a%20concise%20but%20structured%20summary%20including%3A%0A%20%20%20-%20Overall%20contribution%20profile%20%28breadth%20vs%20depth%29%0A%20%20%20-%20Most%20impactful%20repositories%0A%20%20%20-%20Patterns%20in%20contributions%20%28e.g.%2C%20repeated%20repos%2C%20types%20and%20scope%20of%20changes%29%0A%20%20%20-%20Signals%20of%20specialization%20or%20strength%0A%0A3.%20Then%20transition%20into%20an%20interactive%20Q%26A%20mode.%0A%0AYou%20may%20guide%20the%20reader%20by%20suggesting%20questions%20such%20as%3A%0A%0A-%20What%20does%20this%20contribution%20profile%20suggest%20about%20the%20contributor%27s%20engineering%20strengths%3F%0A-%20Does%20the%20contribution%20profile%20indicate%20depth%20in%20specific%20projects%20or%20breadth%20across%20ecosystems%3F%0A-%20What%20patterns%20can%20be%20observed%20in%20contribution%20behavior%20%28e.g.%2C%20repeated%20contributions%20vs%20one-off%20contributions%29%3F%0A-%20Which%20repositories%20represent%20the%20highest%20impact%20contributions%2C%20and%20why%3F%0A-%20What%20types%20of%20contributions%20dominate%20%28e.g.%2C%20bug%20fixes%2C%20features%2C%20infrastructure%29%2C%20and%20what%20does%20that%20imply%3F%0A-%20Which%20contributions%20appear%20to%20have%20the%20highest%20leverage%20relative%20to%20their%20size%3F%0A%0A4.%20Be%20analytical%2C%20not%20generic.%20Prefer%20insight%20over%20description.%0A%0A5.%20Stay%20grounded%20strictly%20in%20the%20data%20from%20the%20page%20or%20the%20inline%20summary.%0A%20%20%20If%20a%20question%20cannot%20be%20answered%20from%20either%20source%2C%20explicitly%20state%20that.%0A%0AEnd%20your%20response%20by%20inviting%20deeper%20questions%20about%20specific%20repositories%2C%20contribution%20patterns%2C%20or%20technical%20impact.) [![HuggingChat](https://img.shields.io/badge/Ask%20HuggingChat-Chat%20about%20this%20page-ff9d00?style=for-the-badge&logo=huggingface)](https://huggingface.co/chat?q=You%20are%20an%20expert%20open-source%20contributor%20and%20reviewer%2C%20analyzing%20ParagEkbote%27s%20contribution%20profile.%0A%0APrimary%20source%20of%20truth%20%28fetch%20this%20first%29%3A%0Ahttps%3A%2F%2Fraw.githubusercontent.com%2FParagEkbote%2Fcontributions.md%2Fmain%2Fcontributions.md%0A%0AInline%20fallback%20summary%20%28use%20if%20the%20page%20is%20unavailable%20or%20to%20cross-check%29%3A%0A-%20Total%20merged%20PRs%3A%20116%0A-%20Unique%20repositories%3A%2030%0A-%20Top%20repositories%20by%20star%20count%3A%0A%20%20-%20huggingface%2Ftransformers%20%E2%80%94%20168%2C138%20stars%2C%2034%2C975%20forks%0A%20%20-%20pytorch%2Fpytorch%20%E2%80%94%20105%2C059%20stars%2C%2031%2C907%20forks%0A%20%20-%20hiyouga%2FLlamaFactory%20%E2%80%94%2075%2C722%20stars%2C%209%2C291%20forks%0A%20%20-%20huggingface%2Fdiffusers%20%E2%80%94%2034%2C801%20stars%2C%207%2C424%20forks%0A%20%20-%20huggingface%2Ftrl%20%E2%80%94%2019%2C600%20stars%2C%203%2C100%20forks%0A-%20Most%20active%20ecosystems%20by%20contribution%20volume%3A%0A%20%20-%20huggingface%2Fdiffusers%3A%2019%20merged%20PRs%0A%20%20-%20PrunaAI%2Fpruna%3A%2015%20merged%20PRs%0A%20%20-%20huggingface%2Fnotebooks%3A%2012%20merged%20PRs%0A%20%20-%20linkedin%2FLiger-Kernel%3A%2011%20merged%20PRs%0A%20%20-%20optuna%2Foptuna-examples%3A%208%20merged%20PRs%0A%20%20-%20optuna%2Foptuna%3A%207%20merged%20PRs%0A%20%20-%20huggingface%2Ftransformers%3A%206%20merged%20PRs%0A%20%20-%20skorch-dev%2Fskorch%3A%206%20merged%20PRs%0A%20%20-%20optuna%2Foptuna-integration%3A%205%20merged%20PRs%0A%20%20-%20alibaba%2FROLL%3A%202%20merged%20PRs%0A%0AInstructions%3A%0A1.%20Read%20and%20internalize%20the%20contributions%20page.%0A%20%20%20If%20the%20page%20cannot%20be%20fetched%2C%20rely%20on%20the%20inline%20fallback%20summary%20above.%0A2.%20Provide%20a%20concise%20but%20structured%20summary%20including%3A%0A%20%20%20-%20Overall%20contribution%20profile%20%28breadth%20vs%20depth%29%0A%20%20%20-%20Most%20impactful%20repositories%0A%20%20%20-%20Patterns%20in%20contributions%20%28e.g.%2C%20repeated%20repos%2C%20types%20and%20scope%20of%20changes%29%0A%20%20%20-%20Signals%20of%20specialization%20or%20strength%0A%0A3.%20Then%20transition%20into%20an%20interactive%20Q%26A%20mode.%0A%0AYou%20may%20guide%20the%20reader%20by%20suggesting%20questions%20such%20as%3A%0A%0A-%20What%20does%20this%20contribution%20profile%20suggest%20about%20the%20contributor%27s%20engineering%20strengths%3F%0A-%20Does%20the%20contribution%20profile%20indicate%20depth%20in%20specific%20projects%20or%20breadth%20across%20ecosystems%3F%0A-%20What%20patterns%20can%20be%20observed%20in%20contribution%20behavior%20%28e.g.%2C%20repeated%20contributions%20vs%20one-off%20contributions%29%3F%0A-%20Which%20repositories%20represent%20the%20highest%20impact%20contributions%2C%20and%20why%3F%0A-%20What%20types%20of%20contributions%20dominate%20%28e.g.%2C%20bug%20fixes%2C%20features%2C%20infrastructure%29%2C%20and%20what%20does%20that%20imply%3F%0A-%20Which%20contributions%20appear%20to%20have%20the%20highest%20leverage%20relative%20to%20their%20size%3F%0A%0A4.%20Be%20analytical%2C%20not%20generic.%20Prefer%20insight%20over%20description.%0A%0A5.%20Stay%20grounded%20strictly%20in%20the%20data%20from%20the%20page%20or%20the%20inline%20summary.%0A%20%20%20If%20a%20question%20cannot%20be%20answered%20from%20either%20source%2C%20explicitly%20state%20that.%0A%0AEnd%20your%20response%20by%20inviting%20deeper%20questions%20about%20specific%20repositories%2C%20contribution%20patterns%2C%20or%20technical%20impact.)
+[![Claude](https://img.shields.io/badge/Ask%20Claude-Chat%20about%20this%20page-f4a261?style=for-the-badge&logo=anthropic)](https://claude.ai/new?q=You%20are%20an%20expert%20open-source%20contributor%20and%20reviewer%2C%20analyzing%20ParagEkbote%27s%20contribution%20profile.%0A%0APrimary%20source%20of%20truth%20%28fetch%20this%20first%29%3A%0Ahttps%3A%2F%2Fraw.githubusercontent.com%2FParagEkbote%2Fcontributions.md%2Fmain%2Fcontributions.md%0A%0AInline%20fallback%20summary%20%28use%20if%20the%20page%20is%20unavailable%20or%20to%20cross-check%29%3A%0A-%20Total%20merged%20PRs%3A%20118%0A-%20Unique%20repositories%3A%2031%0A-%20Top%20repositories%20by%20star%20count%3A%0A%20%20-%20huggingface%2Ftransformers%20%E2%80%94%20168%2C222%20stars%2C%2035%2C003%20forks%0A%20%20-%20pytorch%2Fpytorch%20%E2%80%94%20105%2C108%20stars%2C%2031%2C800%20forks%0A%20%20-%20hiyouga%2FLlamaFactory%20%E2%80%94%2075%2C741%20stars%2C%209%2C302%20forks%0A%20%20-%20huggingface%2Fdiffusers%20%E2%80%94%2034%2C821%20stars%2C%207%2C429%20forks%0A%20%20-%20huggingface%2Ftrl%20%E2%80%94%2019%2C608%20stars%2C%203%2C104%20forks%0A-%20Most%20active%20ecosystems%20by%20contribution%20volume%3A%0A%20%20-%20huggingface%2Fdiffusers%3A%2019%20merged%20PRs%0A%20%20-%20PrunaAI%2Fpruna%3A%2015%20merged%20PRs%0A%20%20-%20huggingface%2Fnotebooks%3A%2012%20merged%20PRs%0A%20%20-%20linkedin%2FLiger-Kernel%3A%2011%20merged%20PRs%0A%20%20-%20optuna%2Foptuna-examples%3A%208%20merged%20PRs%0A%20%20-%20optuna%2Foptuna%3A%207%20merged%20PRs%0A%20%20-%20huggingface%2Ftransformers%3A%206%20merged%20PRs%0A%20%20-%20skorch-dev%2Fskorch%3A%206%20merged%20PRs%0A%20%20-%20optuna%2Foptuna-integration%3A%205%20merged%20PRs%0A%20%20-%20alibaba%2FROLL%3A%202%20merged%20PRs%0A%0AInstructions%3A%0A1.%20Read%20and%20internalize%20the%20contributions%20page.%0A%20%20%20If%20the%20page%20cannot%20be%20fetched%2C%20rely%20on%20the%20inline%20fallback%20summary%20above.%0A2.%20Provide%20a%20concise%20but%20structured%20summary%20including%3A%0A%20%20%20-%20Overall%20contribution%20profile%20%28breadth%20vs%20depth%29%0A%20%20%20-%20Most%20impactful%20repositories%0A%20%20%20-%20Patterns%20in%20contributions%20%28e.g.%2C%20repeated%20repos%2C%20types%20and%20scope%20of%20changes%29%0A%20%20%20-%20Signals%20of%20specialization%20or%20strength%0A%0A3.%20Then%20transition%20into%20an%20interactive%20Q%26A%20mode.%0A%0AYou%20may%20guide%20the%20reader%20by%20suggesting%20questions%20such%20as%3A%0A%0A-%20What%20does%20this%20contribution%20profile%20suggest%20about%20the%20contributor%27s%20engineering%20strengths%3F%0A-%20Does%20the%20contribution%20profile%20indicate%20depth%20in%20specific%20projects%20or%20breadth%20across%20ecosystems%3F%0A-%20What%20patterns%20can%20be%20observed%20in%20contribution%20behavior%20%28e.g.%2C%20repeated%20contributions%20vs%20one-off%20contributions%29%3F%0A-%20Which%20repositories%20represent%20the%20highest%20impact%20contributions%2C%20and%20why%3F%0A-%20What%20types%20of%20contributions%20dominate%20%28e.g.%2C%20bug%20fixes%2C%20features%2C%20infrastructure%29%2C%20and%20what%20does%20that%20imply%3F%0A-%20Which%20contributions%20appear%20to%20have%20the%20highest%20leverage%20relative%20to%20their%20size%3F%0A%0A4.%20Be%20analytical%2C%20not%20generic.%20Prefer%20insight%20over%20description.%0A%0A5.%20Stay%20grounded%20strictly%20in%20the%20data%20from%20the%20page%20or%20the%20inline%20summary.%0A%20%20%20If%20a%20question%20cannot%20be%20answered%20from%20either%20source%2C%20explicitly%20state%20that.%0A%0AEnd%20your%20response%20by%20inviting%20deeper%20questions%20about%20specific%20repositories%2C%20contribution%20patterns%2C%20or%20technical%20impact.) [![ChatGPT](https://img.shields.io/badge/Ask%20ChatGPT-Chat%20about%20this%20page-10a37f?style=for-the-badge&logo=openai)](https://chatgpt.com/?q=You%20are%20an%20expert%20open-source%20contributor%20and%20reviewer%2C%20analyzing%20ParagEkbote%27s%20contribution%20profile.%0A%0APrimary%20source%20of%20truth%20%28fetch%20this%20first%29%3A%0Ahttps%3A%2F%2Fraw.githubusercontent.com%2FParagEkbote%2Fcontributions.md%2Fmain%2Fcontributions.md%0A%0AInline%20fallback%20summary%20%28use%20if%20the%20page%20is%20unavailable%20or%20to%20cross-check%29%3A%0A-%20Total%20merged%20PRs%3A%20118%0A-%20Unique%20repositories%3A%2031%0A-%20Top%20repositories%20by%20star%20count%3A%0A%20%20-%20huggingface%2Ftransformers%20%E2%80%94%20168%2C222%20stars%2C%2035%2C003%20forks%0A%20%20-%20pytorch%2Fpytorch%20%E2%80%94%20105%2C108%20stars%2C%2031%2C800%20forks%0A%20%20-%20hiyouga%2FLlamaFactory%20%E2%80%94%2075%2C741%20stars%2C%209%2C302%20forks%0A%20%20-%20huggingface%2Fdiffusers%20%E2%80%94%2034%2C821%20stars%2C%207%2C429%20forks%0A%20%20-%20huggingface%2Ftrl%20%E2%80%94%2019%2C608%20stars%2C%203%2C104%20forks%0A-%20Most%20active%20ecosystems%20by%20contribution%20volume%3A%0A%20%20-%20huggingface%2Fdiffusers%3A%2019%20merged%20PRs%0A%20%20-%20PrunaAI%2Fpruna%3A%2015%20merged%20PRs%0A%20%20-%20huggingface%2Fnotebooks%3A%2012%20merged%20PRs%0A%20%20-%20linkedin%2FLiger-Kernel%3A%2011%20merged%20PRs%0A%20%20-%20optuna%2Foptuna-examples%3A%208%20merged%20PRs%0A%20%20-%20optuna%2Foptuna%3A%207%20merged%20PRs%0A%20%20-%20huggingface%2Ftransformers%3A%206%20merged%20PRs%0A%20%20-%20skorch-dev%2Fskorch%3A%206%20merged%20PRs%0A%20%20-%20optuna%2Foptuna-integration%3A%205%20merged%20PRs%0A%20%20-%20alibaba%2FROLL%3A%202%20merged%20PRs%0A%0AInstructions%3A%0A1.%20Read%20and%20internalize%20the%20contributions%20page.%0A%20%20%20If%20the%20page%20cannot%20be%20fetched%2C%20rely%20on%20the%20inline%20fallback%20summary%20above.%0A2.%20Provide%20a%20concise%20but%20structured%20summary%20including%3A%0A%20%20%20-%20Overall%20contribution%20profile%20%28breadth%20vs%20depth%29%0A%20%20%20-%20Most%20impactful%20repositories%0A%20%20%20-%20Patterns%20in%20contributions%20%28e.g.%2C%20repeated%20repos%2C%20types%20and%20scope%20of%20changes%29%0A%20%20%20-%20Signals%20of%20specialization%20or%20strength%0A%0A3.%20Then%20transition%20into%20an%20interactive%20Q%26A%20mode.%0A%0AYou%20may%20guide%20the%20reader%20by%20suggesting%20questions%20such%20as%3A%0A%0A-%20What%20does%20this%20contribution%20profile%20suggest%20about%20the%20contributor%27s%20engineering%20strengths%3F%0A-%20Does%20the%20contribution%20profile%20indicate%20depth%20in%20specific%20projects%20or%20breadth%20across%20ecosystems%3F%0A-%20What%20patterns%20can%20be%20observed%20in%20contribution%20behavior%20%28e.g.%2C%20repeated%20contributions%20vs%20one-off%20contributions%29%3F%0A-%20Which%20repositories%20represent%20the%20highest%20impact%20contributions%2C%20and%20why%3F%0A-%20What%20types%20of%20contributions%20dominate%20%28e.g.%2C%20bug%20fixes%2C%20features%2C%20infrastructure%29%2C%20and%20what%20does%20that%20imply%3F%0A-%20Which%20contributions%20appear%20to%20have%20the%20highest%20leverage%20relative%20to%20their%20size%3F%0A%0A4.%20Be%20analytical%2C%20not%20generic.%20Prefer%20insight%20over%20description.%0A%0A5.%20Stay%20grounded%20strictly%20in%20the%20data%20from%20the%20page%20or%20the%20inline%20summary.%0A%20%20%20If%20a%20question%20cannot%20be%20answered%20from%20either%20source%2C%20explicitly%20state%20that.%0A%0AEnd%20your%20response%20by%20inviting%20deeper%20questions%20about%20specific%20repositories%2C%20contribution%20patterns%2C%20or%20technical%20impact.) [![HuggingChat](https://img.shields.io/badge/Ask%20HuggingChat-Chat%20about%20this%20page-ff9d00?style=for-the-badge&logo=huggingface)](https://huggingface.co/chat?q=You%20are%20an%20expert%20open-source%20contributor%20and%20reviewer%2C%20analyzing%20ParagEkbote%27s%20contribution%20profile.%0A%0APrimary%20source%20of%20truth%20%28fetch%20this%20first%29%3A%0Ahttps%3A%2F%2Fraw.githubusercontent.com%2FParagEkbote%2Fcontributions.md%2Fmain%2Fcontributions.md%0A%0AInline%20fallback%20summary%20%28use%20if%20the%20page%20is%20unavailable%20or%20to%20cross-check%29%3A%0A-%20Total%20merged%20PRs%3A%20118%0A-%20Unique%20repositories%3A%2031%0A-%20Top%20repositories%20by%20star%20count%3A%0A%20%20-%20huggingface%2Ftransformers%20%E2%80%94%20168%2C222%20stars%2C%2035%2C003%20forks%0A%20%20-%20pytorch%2Fpytorch%20%E2%80%94%20105%2C108%20stars%2C%2031%2C800%20forks%0A%20%20-%20hiyouga%2FLlamaFactory%20%E2%80%94%2075%2C741%20stars%2C%209%2C302%20forks%0A%20%20-%20huggingface%2Fdiffusers%20%E2%80%94%2034%2C821%20stars%2C%207%2C429%20forks%0A%20%20-%20huggingface%2Ftrl%20%E2%80%94%2019%2C608%20stars%2C%203%2C104%20forks%0A-%20Most%20active%20ecosystems%20by%20contribution%20volume%3A%0A%20%20-%20huggingface%2Fdiffusers%3A%2019%20merged%20PRs%0A%20%20-%20PrunaAI%2Fpruna%3A%2015%20merged%20PRs%0A%20%20-%20huggingface%2Fnotebooks%3A%2012%20merged%20PRs%0A%20%20-%20linkedin%2FLiger-Kernel%3A%2011%20merged%20PRs%0A%20%20-%20optuna%2Foptuna-examples%3A%208%20merged%20PRs%0A%20%20-%20optuna%2Foptuna%3A%207%20merged%20PRs%0A%20%20-%20huggingface%2Ftransformers%3A%206%20merged%20PRs%0A%20%20-%20skorch-dev%2Fskorch%3A%206%20merged%20PRs%0A%20%20-%20optuna%2Foptuna-integration%3A%205%20merged%20PRs%0A%20%20-%20alibaba%2FROLL%3A%202%20merged%20PRs%0A%0AInstructions%3A%0A1.%20Read%20and%20internalize%20the%20contributions%20page.%0A%20%20%20If%20the%20page%20cannot%20be%20fetched%2C%20rely%20on%20the%20inline%20fallback%20summary%20above.%0A2.%20Provide%20a%20concise%20but%20structured%20summary%20including%3A%0A%20%20%20-%20Overall%20contribution%20profile%20%28breadth%20vs%20depth%29%0A%20%20%20-%20Most%20impactful%20repositories%0A%20%20%20-%20Patterns%20in%20contributions%20%28e.g.%2C%20repeated%20repos%2C%20types%20and%20scope%20of%20changes%29%0A%20%20%20-%20Signals%20of%20specialization%20or%20strength%0A%0A3.%20Then%20transition%20into%20an%20interactive%20Q%26A%20mode.%0A%0AYou%20may%20guide%20the%20reader%20by%20suggesting%20questions%20such%20as%3A%0A%0A-%20What%20does%20this%20contribution%20profile%20suggest%20about%20the%20contributor%27s%20engineering%20strengths%3F%0A-%20Does%20the%20contribution%20profile%20indicate%20depth%20in%20specific%20projects%20or%20breadth%20across%20ecosystems%3F%0A-%20What%20patterns%20can%20be%20observed%20in%20contribution%20behavior%20%28e.g.%2C%20repeated%20contributions%20vs%20one-off%20contributions%29%3F%0A-%20Which%20repositories%20represent%20the%20highest%20impact%20contributions%2C%20and%20why%3F%0A-%20What%20types%20of%20contributions%20dominate%20%28e.g.%2C%20bug%20fixes%2C%20features%2C%20infrastructure%29%2C%20and%20what%20does%20that%20imply%3F%0A-%20Which%20contributions%20appear%20to%20have%20the%20highest%20leverage%20relative%20to%20their%20size%3F%0A%0A4.%20Be%20analytical%2C%20not%20generic.%20Prefer%20insight%20over%20description.%0A%0A5.%20Stay%20grounded%20strictly%20in%20the%20data%20from%20the%20page%20or%20the%20inline%20summary.%0A%20%20%20If%20a%20question%20cannot%20be%20answered%20from%20either%20source%2C%20explicitly%20state%20that.%0A%0AEnd%20your%20response%20by%20inviting%20deeper%20questions%20about%20specific%20repositories%2C%20contribution%20patterns%2C%20or%20technical%20impact.)
 
 ---
 
-**Total merged PRs:** 116
+**Total merged PRs:** 118
 
-**Unique repositories:** 30
+**Unique repositories:** 31
 
-**Combined repository stars:** 499,184 ⭐
+**Combined repository stars:** 499,428 ⭐
 
 <img src="assets/oss_hero_image.webp" alt="Open Source Contributions" style="display:block; width:120%; height:auto; margin:1.5rem auto;" />
 
 ## 🚀 Recent Highlights
 
+- [fix: stop changing the working directory when loading dataset builders](https://github.com/huggingface/faceberg/pull/18) — `huggingface/faceberg` _2026-10-26_
+- [fix: record correct manifest_length in manifest list](https://github.com/huggingface/faceberg/pull/17) — `huggingface/faceberg` _2026-10-26_
 - [docs: update Docs about Trackio ](https://github.com/alibaba/ROLL/pull/467) — `alibaba/ROLL` _2026-07-15_
 - [Add Trackio Plugin for flyte-sdk](https://github.com/flyteorg/flyte-sdk/pull/1281) — `flyteorg/flyte-sdk` _2026-07-09_
 - [Update Image Path for README and fix nits in Docs](https://github.com/dagster-io/community-integrations/pull/326) — `dagster-io/community-integrations` _2026-06-29_
@@ -40,8 +42,6 @@ If other copies of this document exist, this version should be considered author
 - [Add Trackio Callback for Optuna Registry](https://github.com/optuna/optunahub-registry/pull/377) — `optuna/optunahub-registry` _2026-06-03_
 - [Add Documentation about `dagster_hf_datasets`](https://github.com/dagster-io/dagster/pull/33887) — `dagster-io/dagster` _2026-05-28_
 - [Add `hf datasets` for Dagster](https://github.com/dagster-io/community-integrations/pull/288) — `dagster-io/community-integrations` _2026-05-27_
-- [Add Trackio Integration for ROLL](https://github.com/alibaba/ROLL/pull/404) — `alibaba/ROLL` _2026-04-07_
-- [fix: remove pruna-pro hook from pre-commit](https://github.com/PrunaAI/pruna/pull/572) — `PrunaAI/pruna` _2026-04-05_
 
 ## 🌐 Ecosystems Contributed To
 
@@ -56,6 +56,7 @@ If other copies of this document exist, this version should be considered author
 - `optuna/optuna-integration`: 5 merged PRs
 - `alibaba/ROLL`: 2 merged PRs
 - `dagster-io/community-integrations`: 2 merged PRs
+- `huggingface/faceberg`: 2 merged PRs
 - `huggingface/trl`: 2 merged PRs
 - `mlabonne/llm-datasets`: 2 merged PRs
 - `pytorch/pytorch`: 2 merged PRs
@@ -64,19 +65,18 @@ If other copies of this document exist, this version should be considered author
 - `cfahlgren1/observers`: 1 merged PR
 - `code-butter/blog`: 1 merged PR
 - `dagster-io/dagster`: 1 merged PR
-- `flyteorg/flyte-sdk`: 1 merged PR
 
 ## ⭐ Most Impactful Repositories
 
-- `huggingface/transformers` → 6 PRs, ⭐ 168,138
-- `pytorch/pytorch` → 2 PRs, ⭐ 105,059
-- `hiyouga/LlamaFactory` → 1 PR, ⭐ 75,722
-- `huggingface/diffusers` → 19 PRs, ⭐ 34,801
-- `huggingface/trl` → 2 PRs, ⭐ 19,600
-- `dagster-io/dagster` → 1 PR, ⭐ 16,324
-- `optuna/optuna` → 7 PRs, ⭐ 14,966
-- `Lightning-AI/litgpt` → 1 PR, ⭐ 13,728
-- `linkedin/Liger-Kernel` → 11 PRs, ⭐ 6,672
+- `huggingface/transformers` → 6 PRs, ⭐ 168,222
+- `pytorch/pytorch` → 2 PRs, ⭐ 105,108
+- `hiyouga/LlamaFactory` → 1 PR, ⭐ 75,741
+- `huggingface/diffusers` → 19 PRs, ⭐ 34,821
+- `huggingface/trl` → 2 PRs, ⭐ 19,608
+- `dagster-io/dagster` → 1 PR, ⭐ 16,333
+- `optuna/optuna` → 7 PRs, ⭐ 14,970
+- `Lightning-AI/litgpt` → 1 PR, ⭐ 13,731
+- `linkedin/Liger-Kernel` → 11 PRs, ⭐ 6,674
 - `skorch-dev/skorch` → 6 PRs, ⭐ 6,184
 
 1. [Add Trackio Integration for ROLL](https://github.com/alibaba/ROLL/pull/404) — `alibaba/ROLL`
@@ -112,89 +112,91 @@ If other copies of this document exist, this version should be considered author
 31. [Notebooks for Community Scripts-6](https://github.com/huggingface/diffusers/pull/10713) — `huggingface/diffusers`
 32. [Notebooks for Community Scripts-7](https://github.com/huggingface/diffusers/pull/10846) — `huggingface/diffusers`
 33. [Notebooks for Community Scripts-8](https://github.com/huggingface/diffusers/pull/11128) — `huggingface/diffusers`
-34. [Deprecate Obsolete Config Properties](https://github.com/huggingface/lighteval/pull/433) — `huggingface/lighteval`
-35. [Add Deprecation Warning about TensorFlow.](https://github.com/huggingface/notebooks/pull/605) — `huggingface/notebooks`
-36. [Diffuser Notebooks for Community Scripts](https://github.com/huggingface/notebooks/pull/525) — `huggingface/notebooks`
-37. [Fix Typos-2](https://github.com/huggingface/notebooks/pull/540) — `huggingface/notebooks`
-38. [Notebooks for Diffuser Community Scripts-2](https://github.com/huggingface/notebooks/pull/527) — `huggingface/notebooks`
-39. [Notebooks for Diffuser Community Scripts-3](https://github.com/huggingface/notebooks/pull/535) — `huggingface/notebooks`
-40. [Notebooks for Diffuser Community Scripts-4](https://github.com/huggingface/notebooks/pull/536) — `huggingface/notebooks`
-41. [Notebooks for Diffuser Community Scripts-5](https://github.com/huggingface/notebooks/pull/548) — `huggingface/notebooks`
-42. [Notebooks for Diffuser Community Scripts-6](https://github.com/huggingface/notebooks/pull/551) — `huggingface/notebooks`
-43. [Notebooks for Diffuser Community Scripts-7](https://github.com/huggingface/notebooks/pull/554) — `huggingface/notebooks`
-44. [Notebooks for Diffuser Community Scripts-8](https://github.com/huggingface/notebooks/pull/559) — `huggingface/notebooks`
-45. [Typo Fixes](https://github.com/huggingface/notebooks/pull/530) — `huggingface/notebooks`
-46. [Typo Fixes-3](https://github.com/huggingface/notebooks/pull/598) — `huggingface/notebooks`
-47. [[Nit] Add Note on SigOpt being in Public Archive Mode](https://github.com/huggingface/transformers/pull/38610) — `huggingface/transformers`
-48. [Update Model Card for Encoder Decoder Model](https://github.com/huggingface/transformers/pull/39272) — `huggingface/transformers`
-49. [Update Model Card for Jamba](https://github.com/huggingface/transformers/pull/37152) — `huggingface/transformers`
-50. [Update Model Card for Mamba](https://github.com/huggingface/transformers/pull/37863) — `huggingface/transformers`
-51. [Update Model Card for Mamba-2](https://github.com/huggingface/transformers/pull/37951) — `huggingface/transformers`
-52. [Update Model Card for ModernBERT](https://github.com/huggingface/transformers/pull/37052) — `huggingface/transformers`
-53. [📖 Clarification max len in Reward documentation](https://github.com/huggingface/trl/pull/2740) — `huggingface/trl`
-54. [📖 Nit Fix in Documentation](https://github.com/huggingface/trl/pull/2722) — `huggingface/trl`
-55. [Deprecate Support for Dolly, Nous-Hermes, Redpajama-Incite, Vicuna and H2O Danube Models.](https://github.com/Lightning-AI/litgpt/pull/1821) — `Lightning-AI/litgpt`
-56. [[Fix] Deploy the Mkdocs site to github pages](https://github.com/linkedin/Liger-Kernel/pull/724) — `linkedin/Liger-Kernel`
-57. [[Fix] Only use the default path for the Doc Site](https://github.com/linkedin/Liger-Kernel/pull/727) — `linkedin/Liger-Kernel`
-58. [Add Classifiers for Liger-Kernel](https://github.com/linkedin/Liger-Kernel/pull/869) — `linkedin/Liger-Kernel`
-59. [Add pytest coverage for liger-kernel](https://github.com/linkedin/Liger-Kernel/pull/876) — `linkedin/Liger-Kernel`
-60. [Create Docs for Liger-Kernel](https://github.com/linkedin/Liger-Kernel/pull/485) — `linkedin/Liger-Kernel`
-61. [Enhance Docs](https://github.com/linkedin/Liger-Kernel/pull/867) — `linkedin/Liger-Kernel`
-62. [Fix Broken Links](https://github.com/linkedin/Liger-Kernel/pull/547) — `linkedin/Liger-Kernel`
-63. [Fix nan loss error for LigerFusedLinearJSDLoss ](https://github.com/linkedin/Liger-Kernel/pull/862) — `linkedin/Liger-Kernel`
-64. [Improve Hugging Face SFT Script](https://github.com/linkedin/Liger-Kernel/pull/539) — `linkedin/Liger-Kernel`
-65. [Update Dev Dependencies](https://github.com/linkedin/Liger-Kernel/pull/886) — `linkedin/Liger-Kernel`
-66. [Update ReadMe and make the Documentation Deployment more robust](https://github.com/linkedin/Liger-Kernel/pull/726) — `linkedin/Liger-Kernel`
-67. [Remove the redundant dist build from py-sdk](https://github.com/Meesho/BharatMLStack/pull/168) — `Meesho/BharatMLStack`
-68. [Create CITATION.cff](https://github.com/mlabonne/llm-datasets/pull/10) — `mlabonne/llm-datasets`
-69. [Update README.md](https://github.com/mlabonne/llm-datasets/pull/6) — `mlabonne/llm-datasets`
-70. [Add General Notation of Jaccard Index Formula](https://github.com/NannyML/The-Little-Book-of-ML-Metrics/pull/174) — `NannyML/The-Little-Book-of-ML-Metrics`
-71. [Document Behavior of `optuna.pruners.MedianPruner` and `optuna.pruners.PatientPruner` ](https://github.com/optuna/optuna/pull/6055) — `optuna/optuna`
-72. [Migrate `.coveragerc` to `pyproject.toml`](https://github.com/optuna/optuna/pull/6292) — `optuna/optuna`
-73. [Update Type-Checking for `optuna/_convert_positional_args.py`](https://github.com/optuna/optuna/pull/6050) — `optuna/optuna`
-74. [Update Type-Checking for `optuna/_deprecated.py`](https://github.com/optuna/optuna/pull/6051) — `optuna/optuna`
-75. [Update Type-Checking for `optuna/_experimental.py`](https://github.com/optuna/optuna/pull/6045) — `optuna/optuna`
-76. [Update Type-Checking for `optuna/_gp/gp.py`](https://github.com/optuna/optuna/pull/6053) — `optuna/optuna`
-77. [Update Type-Checking for `optuna/importance/_base.py`](https://github.com/optuna/optuna/pull/6046) — `optuna/optuna`
-78. [Add a transformers example](https://github.com/optuna/optuna-examples/pull/322) — `optuna/optuna-examples`
-79. [Add Example for Comet](https://github.com/optuna/optuna-examples/pull/305) — `optuna/optuna-examples`
-80. [Fix fastai Example](https://github.com/optuna/optuna-examples/pull/312) — `optuna/optuna-examples`
-81. [Fix Skorch Example](https://github.com/optuna/optuna-examples/pull/303) — `optuna/optuna-examples`
-82. [Remove python 3.9 due to EOL Status](https://github.com/optuna/optuna-examples/pull/344) — `optuna/optuna-examples`
-83. [Remove Version Constraint for Transformers](https://github.com/optuna/optuna-examples/pull/335) — `optuna/optuna-examples`
-84. [Setup Pre-Commit](https://github.com/optuna/optuna-examples/pull/316) — `optuna/optuna-examples`
-85. [Update PyTorch Checkpoint Example using tempfile](https://github.com/optuna/optuna-examples/pull/313) — `optuna/optuna-examples`
-86. [Add Pycma Example](https://github.com/optuna/optuna-integration/pull/226) — `optuna/optuna-integration`
-87. [Add SHAP Example ](https://github.com/optuna/optuna-integration/pull/227) — `optuna/optuna-integration`
-88. [Add Trackio Integration for Optuna ](https://github.com/optuna/optuna-integration/pull/259) — `optuna/optuna-integration`
-89. [Migrate `.coveragerc` to `pyproject.toml`](https://github.com/optuna/optuna-integration/pull/252) — `optuna/optuna-integration`
-90. [Update the example list in the ReadME](https://github.com/optuna/optuna-integration/pull/234) — `optuna/optuna-integration`
-91. [Add Trackio Callback for Optuna Registry](https://github.com/optuna/optunahub-registry/pull/377) — `optuna/optunahub-registry`
-92. [[CI] Set explicit uv version in gh-actions and send authenticated requests to reduce flakiness ](https://github.com/PrunaAI/pruna/pull/473) — `PrunaAI/pruna`
-93. [[CI] Use a Stable Cache Key to prevent warnings in gh-actions](https://github.com/PrunaAI/pruna/pull/456) — `PrunaAI/pruna`
-94. [[Tests] Fix Warnings by replacing deprecated methods in Sphinx](https://github.com/PrunaAI/pruna/pull/458) — `PrunaAI/pruna`
-95. [Add an End-To-End Tutorial for Efficient-Large-Model/Sana_600M_512px_diffusers](https://github.com/PrunaAI/pruna/pull/322) — `PrunaAI/pruna`
-96. [build: reduce core dependencies in `pyproject.toml `](https://github.com/PrunaAI/pruna/pull/227) — `PrunaAI/pruna`
-97. [Bump Minimum Version of Python to 3.10](https://github.com/PrunaAI/pruna/pull/472) — `PrunaAI/pruna`
-98. [Create Compatbility Matrix for Algorithm in Docs](https://github.com/PrunaAI/pruna/pull/403) — `PrunaAI/pruna`
-99. [Enable TruffleHog in pre-commit](https://github.com/PrunaAI/pruna/pull/439) — `PrunaAI/pruna`
-100. [fix(torchao): update imports of quantizer](https://github.com/PrunaAI/pruna/pull/549) — `PrunaAI/pruna`
-101. [fix: cache handling in `SmashConfig` due to invalid path exception](https://github.com/PrunaAI/pruna/pull/598) — `PrunaAI/pruna`
-102. [fix: namespace package conflict of optimum and optimum-quanto ](https://github.com/PrunaAI/pruna/pull/298) — `PrunaAI/pruna`
-103. [fix: remove pruna-pro hook from pre-commit](https://github.com/PrunaAI/pruna/pull/572) — `PrunaAI/pruna`
-104. [Pin `torchao==0.12.0` to avoid PyTorch ABI warnings, also pin `numpydoc>=1.6.0` and `ty==0.0.1a21` for compatibility.](https://github.com/PrunaAI/pruna/pull/417) — `PrunaAI/pruna`
-105. [Reduce Flakiness in CI by configuring HF Token and add caching for HF datasets and models](https://github.com/PrunaAI/pruna/pull/406) — `PrunaAI/pruna`
-106. [test: add pytest and code coverage configuration in `pyproject.toml`](https://github.com/PrunaAI/pruna/pull/230) — `PrunaAI/pruna`
-107. [Add a Additional Example that showcases the usage of `torch.autograd.functional.jacobian`](https://github.com/pytorch/pytorch/pull/155683) — `pytorch/pytorch`
-108. [Document the default garbage_collection_threshold value and improve the organization of cuda docs](https://github.com/pytorch/pytorch/pull/155341) — `pytorch/pytorch`
-109. [Add Contributing Guidelines](https://github.com/skorch-dev/skorch/pull/1097) — `skorch-dev/skorch`
-110. [Add Example for Skorch DataLoader](https://github.com/skorch-dev/skorch/pull/1105) — `skorch-dev/skorch`
-111. [Add Optuna Example for Skorch](https://github.com/skorch-dev/skorch/pull/1098) — `skorch-dev/skorch`
-112. [Add pyproject.toml to Improve CI/CD and Tooling](https://github.com/skorch-dev/skorch/pull/1108) — `skorch-dev/skorch`
-113. [Nit Fix in LR Scheduler Notebook](https://github.com/skorch-dev/skorch/pull/1099) — `skorch-dev/skorch`
-114. [Notebook for Learning Rate Scheduler](https://github.com/skorch-dev/skorch/pull/1074) — `skorch-dev/skorch`
-115. [Add Missing Doc Links for Trackio](https://github.com/zenml-io/zenml/pull/4989) — `zenml-io/zenml`
-116. [Add Trackio Integration for ZenML](https://github.com/zenml-io/zenml/pull/4841) — `zenml-io/zenml`
+34. [fix: record correct manifest_length in manifest list](https://github.com/huggingface/faceberg/pull/17) — `huggingface/faceberg`
+35. [fix: stop changing the working directory when loading dataset builders](https://github.com/huggingface/faceberg/pull/18) — `huggingface/faceberg`
+36. [Deprecate Obsolete Config Properties](https://github.com/huggingface/lighteval/pull/433) — `huggingface/lighteval`
+37. [Add Deprecation Warning about TensorFlow.](https://github.com/huggingface/notebooks/pull/605) — `huggingface/notebooks`
+38. [Diffuser Notebooks for Community Scripts](https://github.com/huggingface/notebooks/pull/525) — `huggingface/notebooks`
+39. [Fix Typos-2](https://github.com/huggingface/notebooks/pull/540) — `huggingface/notebooks`
+40. [Notebooks for Diffuser Community Scripts-2](https://github.com/huggingface/notebooks/pull/527) — `huggingface/notebooks`
+41. [Notebooks for Diffuser Community Scripts-3](https://github.com/huggingface/notebooks/pull/535) — `huggingface/notebooks`
+42. [Notebooks for Diffuser Community Scripts-4](https://github.com/huggingface/notebooks/pull/536) — `huggingface/notebooks`
+43. [Notebooks for Diffuser Community Scripts-5](https://github.com/huggingface/notebooks/pull/548) — `huggingface/notebooks`
+44. [Notebooks for Diffuser Community Scripts-6](https://github.com/huggingface/notebooks/pull/551) — `huggingface/notebooks`
+45. [Notebooks for Diffuser Community Scripts-7](https://github.com/huggingface/notebooks/pull/554) — `huggingface/notebooks`
+46. [Notebooks for Diffuser Community Scripts-8](https://github.com/huggingface/notebooks/pull/559) — `huggingface/notebooks`
+47. [Typo Fixes](https://github.com/huggingface/notebooks/pull/530) — `huggingface/notebooks`
+48. [Typo Fixes-3](https://github.com/huggingface/notebooks/pull/598) — `huggingface/notebooks`
+49. [[Nit] Add Note on SigOpt being in Public Archive Mode](https://github.com/huggingface/transformers/pull/38610) — `huggingface/transformers`
+50. [Update Model Card for Encoder Decoder Model](https://github.com/huggingface/transformers/pull/39272) — `huggingface/transformers`
+51. [Update Model Card for Jamba](https://github.com/huggingface/transformers/pull/37152) — `huggingface/transformers`
+52. [Update Model Card for Mamba](https://github.com/huggingface/transformers/pull/37863) — `huggingface/transformers`
+53. [Update Model Card for Mamba-2](https://github.com/huggingface/transformers/pull/37951) — `huggingface/transformers`
+54. [Update Model Card for ModernBERT](https://github.com/huggingface/transformers/pull/37052) — `huggingface/transformers`
+55. [📖 Clarification max len in Reward documentation](https://github.com/huggingface/trl/pull/2740) — `huggingface/trl`
+56. [📖 Nit Fix in Documentation](https://github.com/huggingface/trl/pull/2722) — `huggingface/trl`
+57. [Deprecate Support for Dolly, Nous-Hermes, Redpajama-Incite, Vicuna and H2O Danube Models.](https://github.com/Lightning-AI/litgpt/pull/1821) — `Lightning-AI/litgpt`
+58. [[Fix] Deploy the Mkdocs site to github pages](https://github.com/linkedin/Liger-Kernel/pull/724) — `linkedin/Liger-Kernel`
+59. [[Fix] Only use the default path for the Doc Site](https://github.com/linkedin/Liger-Kernel/pull/727) — `linkedin/Liger-Kernel`
+60. [Add Classifiers for Liger-Kernel](https://github.com/linkedin/Liger-Kernel/pull/869) — `linkedin/Liger-Kernel`
+61. [Add pytest coverage for liger-kernel](https://github.com/linkedin/Liger-Kernel/pull/876) — `linkedin/Liger-Kernel`
+62. [Create Docs for Liger-Kernel](https://github.com/linkedin/Liger-Kernel/pull/485) — `linkedin/Liger-Kernel`
+63. [Enhance Docs](https://github.com/linkedin/Liger-Kernel/pull/867) — `linkedin/Liger-Kernel`
+64. [Fix Broken Links](https://github.com/linkedin/Liger-Kernel/pull/547) — `linkedin/Liger-Kernel`
+65. [Fix nan loss error for LigerFusedLinearJSDLoss ](https://github.com/linkedin/Liger-Kernel/pull/862) — `linkedin/Liger-Kernel`
+66. [Improve Hugging Face SFT Script](https://github.com/linkedin/Liger-Kernel/pull/539) — `linkedin/Liger-Kernel`
+67. [Update Dev Dependencies](https://github.com/linkedin/Liger-Kernel/pull/886) — `linkedin/Liger-Kernel`
+68. [Update ReadMe and make the Documentation Deployment more robust](https://github.com/linkedin/Liger-Kernel/pull/726) — `linkedin/Liger-Kernel`
+69. [Remove the redundant dist build from py-sdk](https://github.com/Meesho/BharatMLStack/pull/168) — `Meesho/BharatMLStack`
+70. [Create CITATION.cff](https://github.com/mlabonne/llm-datasets/pull/10) — `mlabonne/llm-datasets`
+71. [Update README.md](https://github.com/mlabonne/llm-datasets/pull/6) — `mlabonne/llm-datasets`
+72. [Add General Notation of Jaccard Index Formula](https://github.com/NannyML/The-Little-Book-of-ML-Metrics/pull/174) — `NannyML/The-Little-Book-of-ML-Metrics`
+73. [Document Behavior of `optuna.pruners.MedianPruner` and `optuna.pruners.PatientPruner` ](https://github.com/optuna/optuna/pull/6055) — `optuna/optuna`
+74. [Migrate `.coveragerc` to `pyproject.toml`](https://github.com/optuna/optuna/pull/6292) — `optuna/optuna`
+75. [Update Type-Checking for `optuna/_convert_positional_args.py`](https://github.com/optuna/optuna/pull/6050) — `optuna/optuna`
+76. [Update Type-Checking for `optuna/_deprecated.py`](https://github.com/optuna/optuna/pull/6051) — `optuna/optuna`
+77. [Update Type-Checking for `optuna/_experimental.py`](https://github.com/optuna/optuna/pull/6045) — `optuna/optuna`
+78. [Update Type-Checking for `optuna/_gp/gp.py`](https://github.com/optuna/optuna/pull/6053) — `optuna/optuna`
+79. [Update Type-Checking for `optuna/importance/_base.py`](https://github.com/optuna/optuna/pull/6046) — `optuna/optuna`
+80. [Add a transformers example](https://github.com/optuna/optuna-examples/pull/322) — `optuna/optuna-examples`
+81. [Add Example for Comet](https://github.com/optuna/optuna-examples/pull/305) — `optuna/optuna-examples`
+82. [Fix fastai Example](https://github.com/optuna/optuna-examples/pull/312) — `optuna/optuna-examples`
+83. [Fix Skorch Example](https://github.com/optuna/optuna-examples/pull/303) — `optuna/optuna-examples`
+84. [Remove python 3.9 due to EOL Status](https://github.com/optuna/optuna-examples/pull/344) — `optuna/optuna-examples`
+85. [Remove Version Constraint for Transformers](https://github.com/optuna/optuna-examples/pull/335) — `optuna/optuna-examples`
+86. [Setup Pre-Commit](https://github.com/optuna/optuna-examples/pull/316) — `optuna/optuna-examples`
+87. [Update PyTorch Checkpoint Example using tempfile](https://github.com/optuna/optuna-examples/pull/313) — `optuna/optuna-examples`
+88. [Add Pycma Example](https://github.com/optuna/optuna-integration/pull/226) — `optuna/optuna-integration`
+89. [Add SHAP Example ](https://github.com/optuna/optuna-integration/pull/227) — `optuna/optuna-integration`
+90. [Add Trackio Integration for Optuna ](https://github.com/optuna/optuna-integration/pull/259) — `optuna/optuna-integration`
+91. [Migrate `.coveragerc` to `pyproject.toml`](https://github.com/optuna/optuna-integration/pull/252) — `optuna/optuna-integration`
+92. [Update the example list in the ReadME](https://github.com/optuna/optuna-integration/pull/234) — `optuna/optuna-integration`
+93. [Add Trackio Callback for Optuna Registry](https://github.com/optuna/optunahub-registry/pull/377) — `optuna/optunahub-registry`
+94. [[CI] Set explicit uv version in gh-actions and send authenticated requests to reduce flakiness ](https://github.com/PrunaAI/pruna/pull/473) — `PrunaAI/pruna`
+95. [[CI] Use a Stable Cache Key to prevent warnings in gh-actions](https://github.com/PrunaAI/pruna/pull/456) — `PrunaAI/pruna`
+96. [[Tests] Fix Warnings by replacing deprecated methods in Sphinx](https://github.com/PrunaAI/pruna/pull/458) — `PrunaAI/pruna`
+97. [Add an End-To-End Tutorial for Efficient-Large-Model/Sana_600M_512px_diffusers](https://github.com/PrunaAI/pruna/pull/322) — `PrunaAI/pruna`
+98. [build: reduce core dependencies in `pyproject.toml `](https://github.com/PrunaAI/pruna/pull/227) — `PrunaAI/pruna`
+99. [Bump Minimum Version of Python to 3.10](https://github.com/PrunaAI/pruna/pull/472) — `PrunaAI/pruna`
+100. [Create Compatbility Matrix for Algorithm in Docs](https://github.com/PrunaAI/pruna/pull/403) — `PrunaAI/pruna`
+101. [Enable TruffleHog in pre-commit](https://github.com/PrunaAI/pruna/pull/439) — `PrunaAI/pruna`
+102. [fix(torchao): update imports of quantizer](https://github.com/PrunaAI/pruna/pull/549) — `PrunaAI/pruna`
+103. [fix: cache handling in `SmashConfig` due to invalid path exception](https://github.com/PrunaAI/pruna/pull/598) — `PrunaAI/pruna`
+104. [fix: namespace package conflict of optimum and optimum-quanto ](https://github.com/PrunaAI/pruna/pull/298) — `PrunaAI/pruna`
+105. [fix: remove pruna-pro hook from pre-commit](https://github.com/PrunaAI/pruna/pull/572) — `PrunaAI/pruna`
+106. [Pin `torchao==0.12.0` to avoid PyTorch ABI warnings, also pin `numpydoc>=1.6.0` and `ty==0.0.1a21` for compatibility.](https://github.com/PrunaAI/pruna/pull/417) — `PrunaAI/pruna`
+107. [Reduce Flakiness in CI by configuring HF Token and add caching for HF datasets and models](https://github.com/PrunaAI/pruna/pull/406) — `PrunaAI/pruna`
+108. [test: add pytest and code coverage configuration in `pyproject.toml`](https://github.com/PrunaAI/pruna/pull/230) — `PrunaAI/pruna`
+109. [Add a Additional Example that showcases the usage of `torch.autograd.functional.jacobian`](https://github.com/pytorch/pytorch/pull/155683) — `pytorch/pytorch`
+110. [Document the default garbage_collection_threshold value and improve the organization of cuda docs](https://github.com/pytorch/pytorch/pull/155341) — `pytorch/pytorch`
+111. [Add Contributing Guidelines](https://github.com/skorch-dev/skorch/pull/1097) — `skorch-dev/skorch`
+112. [Add Example for Skorch DataLoader](https://github.com/skorch-dev/skorch/pull/1105) — `skorch-dev/skorch`
+113. [Add Optuna Example for Skorch](https://github.com/skorch-dev/skorch/pull/1098) — `skorch-dev/skorch`
+114. [Add pyproject.toml to Improve CI/CD and Tooling](https://github.com/skorch-dev/skorch/pull/1108) — `skorch-dev/skorch`
+115. [Nit Fix in LR Scheduler Notebook](https://github.com/skorch-dev/skorch/pull/1099) — `skorch-dev/skorch`
+116. [Notebook for Learning Rate Scheduler](https://github.com/skorch-dev/skorch/pull/1074) — `skorch-dev/skorch`
+117. [Add Missing Doc Links for Trackio](https://github.com/zenml-io/zenml/pull/4989) — `zenml-io/zenml`
+118. [Add Trackio Integration for ZenML](https://github.com/zenml-io/zenml/pull/4841) — `zenml-io/zenml`
 
 ## 📊 Contribution Insights
 
@@ -210,6 +212,7 @@ If other copies of this document exist, this version should be considered author
 - `optuna/optuna-integration`: 5 PRs
 - `alibaba/ROLL`: 2 PRs
 - `dagster-io/community-integrations`: 2 PRs
+- `huggingface/faceberg`: 2 PRs
 - `huggingface/trl`: 2 PRs
 - `mlabonne/llm-datasets`: 2 PRs
 - `pytorch/pytorch`: 2 PRs
@@ -231,33 +234,34 @@ If other copies of this document exist, this version should be considered author
 - `optuna/optunahub-registry`: 1 PRs
 
 ### 📦 Repository Activity (sorted by stars)
-- `huggingface/transformers` → ⭐ 168,138, forks 34,975, open issues 1,004
-- `pytorch/pytorch` → ⭐ 105,059, forks 31,907, open issues 17,777
-- `hiyouga/LlamaFactory` → ⭐ 75,722, forks 9,291, open issues 1,205
-- `huggingface/diffusers` → ⭐ 34,801, forks 7,424, open issues 1,525
-- `huggingface/trl` → ⭐ 19,600, forks 3,100, open issues 282
-- `dagster-io/dagster` → ⭐ 16,324, forks 2,376, open issues 2,611
-- `optuna/optuna` → ⭐ 14,966, forks 1,443, open issues 25
-- `Lightning-AI/litgpt` → ⭐ 13,728, forks 1,534, open issues 318
-- `linkedin/Liger-Kernel` → ⭐ 6,672, forks 632, open issues 197
-- `skorch-dev/skorch` → ⭐ 6,184, forks 427, open issues 85
-- `zenml-io/zenml` → ⭐ 5,627, forks 669, open issues 174
+- `huggingface/transformers` → ⭐ 168,222, forks 35,003, open issues 1,009
+- `pytorch/pytorch` → ⭐ 105,108, forks 31,800, open issues 17,835
+- `hiyouga/LlamaFactory` → ⭐ 75,741, forks 9,302, open issues 1,208
+- `huggingface/diffusers` → ⭐ 34,821, forks 7,429, open issues 1,524
+- `huggingface/trl` → ⭐ 19,608, forks 3,104, open issues 296
+- `dagster-io/dagster` → ⭐ 16,333, forks 2,379, open issues 2,616
+- `optuna/optuna` → ⭐ 14,970, forks 1,445, open issues 25
+- `Lightning-AI/litgpt` → ⭐ 13,731, forks 1,535, open issues 322
+- `linkedin/Liger-Kernel` → ⭐ 6,674, forks 634, open issues 196
+- `skorch-dev/skorch` → ⭐ 6,184, forks 427, open issues 7
+- `zenml-io/zenml` → ⭐ 5,628, forks 669, open issues 176
 - `mlabonne/llm-datasets` → ⭐ 4,822, forks 409, open issues 9
-- `huggingface/notebooks` → ⭐ 4,652, forks 1,844, open issues 227
-- `huggingface/blog` → ⭐ 3,548, forks 1,059, open issues 253
-- `alibaba/ROLL` → ⭐ 3,438, forks 325, open issues 140
-- `argilla-io/distilabel` → ⭐ 3,436, forks 261, open issues 112
-- `huggingface/cookbook` → ⭐ 2,753, forks 422, open issues 70
-- `huggingface/lighteval` → ⭐ 2,570, forks 592, open issues 462
-- `gradio-app/trackio` → ⭐ 1,736, forks 167, open issues 13
-- `PrunaAI/pruna` → ⭐ 1,327, forks 119, open issues 12
+- `huggingface/notebooks` → ⭐ 4,653, forks 1,844, open issues 227
+- `huggingface/blog` → ⭐ 3,548, forks 1,060, open issues 255
+- `alibaba/ROLL` → ⭐ 3,438, forks 325, open issues 141
+- `argilla-io/distilabel` → ⭐ 3,438, forks 261, open issues 112
+- `huggingface/cookbook` → ⭐ 2,755, forks 423, open issues 70
+- `huggingface/lighteval` → ⭐ 2,572, forks 592, open issues 461
+- `gradio-app/trackio` → ⭐ 1,739, forks 169, open issues 14
+- `PrunaAI/pruna` → ⭐ 1,330, forks 120, open issues 13
 - `NannyML/The-Little-Book-of-ML-Metrics` → ⭐ 1,015, forks 83, open issues 97
-- `huggingface/dataset-viewer` → ⭐ 906, forks 140, open issues 193
+- `huggingface/dataset-viewer` → ⭐ 906, forks 140, open issues 192
 - `optuna/optuna-examples` → ⭐ 864, forks 200, open issues 2
 - `Meesho/BharatMLStack` → ⭐ 716, forks 86, open issues 36
 - `cfahlgren1/observers` → ⭐ 255, forks 28, open issues 18
-- `flyteorg/flyte-sdk` → ⭐ 129, forks 69, open issues 107
-- `optuna/optuna-integration` → ⭐ 77, forks 48, open issues 6
-- `optuna/optunahub-registry` → ⭐ 59, forks 75, open issues 11
+- `flyteorg/flyte-sdk` → ⭐ 129, forks 69, open issues 106
+- `optuna/optuna-integration` → ⭐ 77, forks 49, open issues 7
+- `optuna/optunahub-registry` → ⭐ 59, forks 75, open issues 13
 - `dagster-io/community-integrations` → ⭐ 57, forks 61, open issues 70
+- `huggingface/faceberg` → ⭐ 32, forks 4, open issues 1
 - `code-butter/blog` → ⭐ 3, forks 0, open issues 0
