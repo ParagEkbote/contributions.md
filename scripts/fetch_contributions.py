@@ -1,7 +1,7 @@
 import os
 import requests
 import subprocess
-import httpx
+import httpx2
 import asyncio
 import urllib.parse
 from datetime import date
@@ -194,10 +194,10 @@ async def _fetch_all_stats(prs):
     logger.info(f"Fetching metadata for {len(unique_repos)} repositories")
     logger.info("Enriching PRs with efficiency metrics")
 
-    limits    = httpx.Limits(max_connections=15)
+    limits    = httpx2.Limits(max_connections=15)
     semaphore = asyncio.Semaphore(10)
 
-    async with httpx.AsyncClient(timeout=15, limits=limits) as client:
+    async with httpx2.AsyncClient(timeout=15, limits=limits) as client:
         # Fire both sets of requests inside the same client / event loop
         repo_results, pr_results = await asyncio.gather(
             asyncio.gather(*[
@@ -277,7 +277,7 @@ Inline fallback summary (use if the page is unavailable or to cross-check):
 - Unique repositories: {repo_count}
 - Top repositories by star count:
 {stars_lines}
-- Most active ecosystems by contribution volume:
+- Most active repositories by contribution volume:
 {activity_lines}
 
 Instructions:
@@ -294,7 +294,7 @@ Instructions:
 You may guide the reader by suggesting questions such as:
 
 - What does this contribution profile suggest about the contributor's engineering strengths?
-- Does the contribution profile indicate depth in specific projects or breadth across ecosystems?
+- Does the contribution profile indicate depth in specific projects or breadth across repositories?
 - What patterns can be observed in contribution behavior (e.g., repeated contributions vs one-off contributions)?
 - Which repositories represent the highest impact contributions, and why?
 - What types of contributions dominate (e.g., bug fixes, features, infrastructure), and what does that imply?
@@ -401,12 +401,14 @@ def write_markdown(prs, repo_stats, contrib_stats,
     today = date.today().isoformat()
 
     # Compute repo rankings once — used in multiple sections below.
-    # NOTE: This ranking is used only for the summary sections (Recent Highlights,
-    # Most Impactful Repositories). The full PR list preserves its original
-    # insertion order so the document reads as a changelog, not a star-sorted dump.
     sorted_repos = sorted(
         repo_stats["repo_stats"].items(),
         key=lambda x: x[1]["stars"],
+        reverse=True,
+    )
+    recent_prs = sorted(
+        prs,
+        key=lambda pr: pr.get("mergedAt") or "",
         reverse=True,
     )
 
@@ -468,11 +470,6 @@ canonical_url: {CONTRIBUTIONS_URL}
         # This section reflects current activity; star-weighted signal lives in
         # Most Impactful Repositories below.
         f.write("## 🚀 Recent Highlights\n\n")
-        recent_prs = sorted(
-            prs,
-            key=lambda pr: pr.get("mergedAt") or "",
-            reverse=True,
-        )
         for pr in recent_prs[:10]:
             repo      = pr["repository"]["nameWithOwner"]
             merged_at = (pr.get("mergedAt") or "")[:10]  # YYYY-MM-DD, empty if missing
@@ -480,17 +477,9 @@ canonical_url: {CONTRIBUTIONS_URL}
             f.write(f"- [{pr['title']}]({pr['url']}) — `{repo}`{date_tag}\n")
         f.write("\n")
 
-        # ---- Ecosystems Contributed To ----
-        # Sorted by PR count (most_common). Lets a model quickly infer
-        # which ecosystems have meaningful, repeated contributions.
-        f.write("## 🌐 Ecosystems Contributed To\n\n")
-        for repo, count in contrib_stats["repo_counts"].most_common(20):
-            f.write(f"- `{repo}`: {count} merged PR{'s' if count != 1 else ''}\n")
-        f.write("\n")
-
         # ---- Most Impactful Repositories ----
         # Top 10 by star count — separate from the changelog PR list so
-        # that high-star repos surface for retrieval without reordering history.
+        # that high-star repos surface for retrieval without changing PR chronology.
         f.write("## ⭐ Most Impactful Repositories\n\n")
         impact_written = 0
         for repo, meta in sorted_repos:
@@ -506,10 +495,9 @@ canonical_url: {CONTRIBUTIONS_URL}
                     break
         f.write("\n")
 
-        # ---- Full PR list (original insertion order preserved) ----
-        # Do NOT sort by stars here — that would destroy the changelog character
-        # of the document. Star-weighted signal lives in the sections above.
-        for idx, pr in enumerate(prs, start=1):
+        # ---- Full PR list (most recent first) ----
+        f.write("## 📋 All Pull Requests (Most Recent First)\n\n")
+        for idx, pr in enumerate(recent_prs, start=1):
             repo = pr["repository"]["nameWithOwner"]
             f.write(f"{idx}. [{pr['title']}]({pr['url']}) — `{repo}`\n")
 
@@ -519,14 +507,6 @@ canonical_url: {CONTRIBUTIONS_URL}
         f.write("### 🔁 PRs per Repository\n")
         for repo, count in contrib_stats["repo_counts"].most_common():
             f.write(f"- `{repo}`: {count} PRs\n")
-
-        f.write("\n### 📦 Repository Activity (sorted by stars)\n")
-        for repo, meta in sorted_repos:
-            f.write(
-                f"- `{repo}` → ⭐ {meta['stars']:,}, "
-                f"forks {meta['forks']:,}, "
-                f"open issues {meta['open_issues']:,}\n"
-            )
 
     logger.info(f"Output written to: {out_path}")
     print(f"📝 Wrote contributions file to: {out_path}")
