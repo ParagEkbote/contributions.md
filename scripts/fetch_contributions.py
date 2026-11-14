@@ -1,5 +1,4 @@
 import os
-import requests
 import subprocess
 import httpx2
 import asyncio
@@ -62,7 +61,7 @@ CONTRIBUTIONS_URL = (
 # UTILS
 # -------------------------------------------------------
 
-def safe_json(resp: requests.Response):
+def safe_json(resp: httpx2.Response):
     if resp.status_code != 200:
         raise RuntimeError(f"GitHub API error {resp.status_code}: {resp.text}")
     return resp.json()
@@ -82,7 +81,7 @@ def get_repo_root() -> Path:
 # GRAPHQL: MERGED EXTERNAL PRs
 # -------------------------------------------------------
 
-def fetch_merged_external_prs(author="ParagEkbote"):
+def fetch_merged_external_prs(client, author="ParagEkbote"):
     logger.info("Fetching merged external PRs")
 
     all_prs = []
@@ -97,7 +96,7 @@ def fetch_merged_external_prs(author="ParagEkbote"):
             f'nodes {{ ... on PullRequest {{ title url mergedAt repository {{ nameWithOwner }} }} }} }} }}'
         )
 
-        resp = requests.post(GRAPHQL_URL, headers=HEADERS, json={"query": query})
+        resp = client.post(GRAPHQL_URL, headers=HEADERS, json={"query": query})
         data = safe_json(resp)
 
         search = data["data"]["search"]
@@ -118,7 +117,7 @@ def fetch_merged_external_prs(author="ParagEkbote"):
 # REST: PYTORCH PRs
 # -------------------------------------------------------
 
-def fetch_pytorch_prs():
+def fetch_pytorch_prs(client):
     logger.info("Fetching PyTorch PRs")
 
     url    = "https://api.github.com/search/issues"
@@ -126,16 +125,15 @@ def fetch_pytorch_prs():
         "q": "repo:pytorch/pytorch author:ParagEkbote is:pr is:closed label:Merged"
     }
 
-    resp = requests.get(url, headers=HEADERS, params=params)
+    resp = client.get(url, headers=HEADERS, params=params)
     data = resp.json()
 
     return [
         {
             "title":    pr["title"],
             "url":      pr["html_url"],
-            # Issues search returns pull_request.merged_at for closed PRs;
-            # fall back to None so sorting treats these as oldest.
             "mergedAt": pr.get("pull_request", {}).get("merged_at"),
+            "closedAt": pr.get("closed_at"),
             "repository": {"nameWithOwner": "pytorch/pytorch"},
         }
         for pr in data.get("items", [])
@@ -166,11 +164,9 @@ async def _fetch_repo_metadata_async(client, repo_name, semaphore):
 
 async def _fetch_pr_stats_async(client, pr, semaphore):
     async with semaphore:
-        api_url = (
-            pr["url"]
-            .replace("https://github.com/", "https://api.github.com/repos/")
-            .replace("/pull/", "/pulls/")
-        )
+        pr_number = urllib.parse.urlparse(pr["url"]).path.rstrip("/").rsplit("/", 1)[-1]
+        repo_name = pr["repository"]["nameWithOwner"]
+        api_url = f"{REST_URL}/repos/{repo_name}/pulls/{pr_number}"
 
         resp = await client.get(api_url, headers=HEADERS)
 
@@ -178,6 +174,8 @@ async def _fetch_pr_stats_async(client, pr, semaphore):
             data      = resp.json()
             additions = data.get("additions", 0)
             deletions = data.get("deletions", 0)
+            pr["mergedAt"] = data.get("merged_at") or pr.get("mergedAt")
+            pr["closedAt"] = data.get("closed_at") or pr.get("closedAt")
         else:
             additions, deletions = 0, 0
             logger.warning(f"Failed PR stats fetch: {pr['url']}")
@@ -408,7 +406,7 @@ def write_markdown(prs, repo_stats, contrib_stats,
     )
     recent_prs = sorted(
         prs,
-        key=lambda pr: pr.get("mergedAt") or "",
+        key=lambda pr: pr.get("mergedAt") or pr.get("closedAt") or "",
         reverse=True,
     )
 
@@ -465,15 +463,19 @@ canonical_url: {CONTRIBUTIONS_URL}
             "style=\"display:block; width:120%; height:auto; margin:1.5rem auto;\" />\n\n"
         )
         # ---- Recent Highlights ----
-        # 10 most recently merged PRs, sorted by mergedAt descending.
-        # PRs with no mergedAt (e.g. PyTorch REST fallback gaps) sort to the end.
+        # Merge date is preferred; closed date orders closed, unmerged PyTorch PRs.
         # This section reflects current activity; star-weighted signal lives in
         # Most Impactful Repositories below.
         f.write("## 🚀 Recent Highlights\n\n")
         for pr in recent_prs[:10]:
             repo      = pr["repository"]["nameWithOwner"]
-            merged_at = (pr.get("mergedAt") or "")[:10]  # YYYY-MM-DD, empty if missing
-            date_tag  = f" _{merged_at}_" if merged_at else ""
+            merged_at = pr.get("mergedAt")
+            closed_at = pr.get("closedAt")
+            date_tag  = (
+                f" _{merged_at[:10]}_" if merged_at
+                else f" _closed {closed_at[:10]}_" if closed_at
+                else ""
+            )
             f.write(f"- [{pr['title']}]({pr['url']}) — `{repo}`{date_tag}\n")
         f.write("\n")
 
@@ -526,8 +528,9 @@ if __name__ == "__main__":
     logger.setLevel(getattr(logging, args.log_level))
     logger.info("Starting OSS contribution aggregation")
 
-    merged_external = fetch_merged_external_prs()
-    pytorch_prs     = fetch_pytorch_prs()
+    with httpx2.Client(timeout=15) as client:
+        merged_external = fetch_merged_external_prs(client)
+        pytorch_prs     = fetch_pytorch_prs(client)
 
     logger.info("Merging PR datasets")
     combined = {pr["url"]: pr for pr in merged_external + pytorch_prs}.values()
