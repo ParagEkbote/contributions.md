@@ -459,7 +459,7 @@ canonical_url: {CONTRIBUTIONS_URL}
 
         # ---- Hero image ----
         f.write(
-            "<img src=\"assets/oss_hero_image.webp\" alt=\"Open Source Contributions\" "
+            "<img src=\"assets/oss_hero_img.png\" alt=\"Open Source Contributions\" "
             "style=\"display:block; width:120%; height:auto; margin:1.5rem auto;\" />\n\n"
         )
         # ---- Recent Highlights ----
